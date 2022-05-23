@@ -1,0 +1,50 @@
+*{
+    background-color: #000000;
+
+}
+
+
+.container_wrapper{
+    max-width: 1487px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: #000000;
+    font-family: 'Inter';
+}
+@media only screen and (min-width: 1600px) {
+    .font__size_sixty{
+        font-size: 60px;
+        line-height: 73px;
+        letter-spacing: -0.03em;
+    }
+    .font__size_twentyeight{
+        font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.03em;
+    }
+    .font__size_twentyfive{
+        line-height: 30px;        
+        letter-spacing: 0.02em;
+  
+    }
+
+}
+
+
+
+/* header */
+
+
+.header__heading{
+    line-height: 73px;
+letter-spacing: -0.03em;
+}
+.heading__para{
+    line-height: 34px;
+    letter-spacing: -0.03em;
+
+}
+
+.header__items__img{
+margin-top:-20px
+}

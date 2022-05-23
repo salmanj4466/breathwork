@@ -1,83 +1,354 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themesbrand.com/dorsin-tailwind/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Mar 2022 18:16:15 GMT -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
-        rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
+
+    <meta charset="utf-8" />
+    <title>BREATHWORK</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Premium Tailwindcss Landing Page Template, Tailwindcss v3.0" />
+        <meta name="keywords" content="Tailwindcss v3.0, premium, marketing, multipurpose" />
+        <meta content="Themesdesign" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <!-- Tailwind Css-->
+        <link href="assets/css/tailwind.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:wght@100;200;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+            rel="stylesheet">
+        <!-- Icons Css -->
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                        }
+                    }, screens: {
+                        'xs': '300px',
+                        'sm': '640px',
+                        // => @media (min-width: 640px) { ... }
+
+                        'md': '768px',
+                        // => @media (min-width: 768px) { ... }
+
+                        'lg': '1024px',
+                        // => @media (min-width: 1024px) { ... }
+
+                        'xl': '1280px',
+                        // => @media (min-width: 1280px) { ... }
+
+                        '2xl': '1600px',
+                        // => @media (min-width: 1536px) { ... }
                     }
                 }
             }
-        }
-    </script>
+        </script>
 </head>
 
+
 <body>
-    <div class="container_wrapper">
+    <!-- Navbar Start -->
+
+    <nav class="pb-10">
+        <div class="lg:container mt-4 flex flex-wrap items-center">
+
+            <!-- Main Logo -->
+            <a href="#">
+                <img src="./assets/images/breathwork_logo_1_weiß-2 1.svg" class="w-32 h-20 mt-6" alt="logo" />
+            </a>
+
+            <div class="flex items-center lg:order-2 ml-auto lg:mr-0 mr-8">
+                <!-- Navbar Button -->
+                <a href="#" class="btn bg-yellow-400 rounded-lg text-black translate-y-0">
+                    Jetzt Termin vereinbaren
+                </a>
+            </div>
 
 
-    <!-- navbar -->
-    <nav class="sm:px-4 pt-10 mx-auto rounded">
-        <div class="flex flex-wrap justify-between align-middle mx-auto">
-            <div> <a href="https://flowbite.com">
-                    <img src="./assests/breathwork_logo_1_weiß-2 1.svg" class="w-32 h-20" alt="logo" />
-                </a></div>
-            <div><button type="button"
-                    class="h-12 p-2 bg-yellow-400 rounded-lg font-['Inter'] not-italic font-bold text-sm leading-4 text-black tracking-wider	">
-                    Jetzt Termin vereinbaren </button></div>
         </div>
     </nav>
-    <!-- header -->
 
-    <header class="mt-10 px-10 container">
-        <h1 class="not-italic font-extrabold text-6xl text-center text-gray-200 font-['Inter'] header__heading">Finde
+    <!-- Navbar End -->
+
+
+    <!-- Home Start -->
+    <header class="mt-10 xs:px-4 lg:px-10 lg:container 2xl:pb-10 sm:pb-5">
+        <h1 class="not-italic font-extrabold xs:text-lg md:text:2xl lg:text-4xl 2xl:text-6xl text-center text-gray-200 font__size_sixty">Finde
             deinen Weg und lebe deine Vision!</h1>
-        <p class="pt-3 not-italic font-bold text-xl text-center text-gray-600 font-['Inter'] heading__para">Entdecke die
+        <p class="container pt-3 pb-6 not-italic font-bold xs:text-sm md:text:xl lg:text-2xl text-center text-gray-600 font__size_twentyeight">Entdecke die
             Kraft der Atmung und kreiere durch die Coaching Sessions das Leben, dass du wirklich führen möchtest.
             Löse Blockaden auf, stell dich deinen Hindernissen und finde die Klarheit für deinen Weg</p>
 
-        <div class="px-10 container pt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="order-2 sm:order-2 lg:order-1">
+        <div class="xs:px-2 2xl:px-10 lg:container pt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="order-2 sm:order-2 lg:order-1 flex flex-col justify-center">
                 <div class="flex align-middle pb-4">
-                    <img class="header__items__img" src="./assests/done circle.svg">
-                    <p class="header__items__text pl-4">Erhalte eine klare Strategie, wie du mithilfe deiner Atmung
+                    <img class="header__items__img" src="./assets/images/done circle.svg">
+                    <p class="xs:text:lg lg:text-xl 2xl:text-2xl 2xl:font__size_twentyfive not-italic font-medium text-white pl-4">Erhalte eine klare Strategie, wie du mithilfe deiner Atmung
                         Stress abbaust und Resilienz trainierst</p>
                 </div>
                 <div class="flex align-middle pb-4">
-                    <img class="header__items__img" src="./assests/done circle.svg">
-                    <p class="header__items__text pl-4">Wie du in kritischen Situationen ruhig bleibst und klare
+                    <img class="header__items__img" src="./assets/images/done circle.svg">
+                    <p class="xs:text:lg lg:text-xl 2xl:text-2xl 2xl:font__size_twentyfive not-italic font-medium text-white pl-4">Wie du in kritischen Situationen ruhig bleibst und klare
                         Entscheidungen treffen kannst</p>
                 </div>
                 <div class="flex align-middle pb-4">
-                    <img class="header__items__img" src="./assests/done circle.svg">
-                    <p class="header__items__text pl-4">Lerne Schmerzen und Ängste lozulassen und zu
+                    <img class="header__items__img" src="./assets/images/done circle.svg">
+                    <p class="xs:text:lg lg:text-xl 2xl:text-2xl 2xl:font__size_twentyfive not-italic font-medium text-white pl-4">Lerne Schmerzen und Ängste lozulassen und zu
                         akzeptieren und dadurch zu heilen</p>
                 </div>
-
+                <div class="flex mt-10 not-italic font-bold md:text-xl xs:text-lg tracking-wider leading-6 text-center text-black"> <a href="#" class="btn bg-yellow-400 rounded-lg text-black translate-y-0">
+                    Jetzt kostenloses Gespräch 
+                    vereinbaren                </a>
+                
+                <div>
+                    <div class="flex pl-6 items-center gap-2">
+<img src="./assets/images/star-svgrepo-com.svg"/>
+<img src="./assets/images/star-svgrepo-com.svg"/>
+<img src="./assets/images/star-svgrepo-com.svg"/>
+<img src="./assets/images/star-svgrepo-com.svg"/>
+<img src="./assets/images/star-svgrepo-com.svg"/>
+                    </div>
+                    <div>
+<p class="pl-6 not-italic font-medium text-sm leading-7 text-gray-600 tracking-wide">4,9 Sterne aus 300 Bewertungen</p>
+                    </div>
+                </div>
+                </div>
             </div>
-            <div class="order-1 sm:order-1 lg:order-2">
-                <img class="object-cover rounded-xl" src="./assests/header_img.png">
+            <div class="order-1 sm:order-1 lg:order-2 ml-0">
+                <img class="object-cover rounded-xl" src="./assets/images/header_img.png">
             </div>
         </div>
 
     </header>
-
+    <!-- Home Start -->
     <!-- Befreie durch Atmung deinen Geist & dich selbst -->
 
     <div class="container mx-auto mt-10">
-        <img class="mx-auto w-20 h-20" src="./assests/breathwork_logo_baer_weiß 11.svg">
+        <img class="mx-auto w-21 h-21" src="./assets/images/breathwork_logo_baer_weiß 11.svg">
+        <h2 class="pt-5 not-italic font-bold 2xl:text-5xl lg:text-3xl xs:text-lg tracking-tighter 2xl:leading-10 text-center text-gray-200 ">
+            Befreie durch Atmung deinen Geist & dich selbst
+        </h2>
+        <p
+            class="pt-4 not-italic font-bold 2xl:text-3xl lg:text-xl xs:text-sm leading-8 text-center text-gray-600 font-['Inter'] tracking-tighter">
+            Die Kraft von “BREATHWORK” - Wie es dir helfen kann
+        </p>
+    </div>
+
+    <!-- Service Start -->
+    <section id="services">
+        <div class="container">
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-16 mt-12">
+                <!-- Services Card 1 -->
+                <div class="space-y-6 p-4 text-center group hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
+                            src="./assets/images/breathwork_logo_transparent.svg">
+                    </div>
+                    <h4 class="leading-10 tracking-tighter not-italic 2xl:font-bold sm:font-normal xs:xl lg:2xl 2xl:text-4xl text-gray-200">Ängste überwinden</h4>
+                    <p class="not-italic font-medium 2xl:text-lg leading-7 text-center text-gray-600 tracking-tighter">Lass dich von deinem Atem leiten und finde den Mut in dir dich deinen
+                        Ängsten zu
+                        stellen. In dir steckt so viel mehr als du denkst.</p>
+                </div>
+
+                <!-- Services Card 2 -->
+                <div class="space-y-6 p-4 text-center group hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
+                            src="./assets/images/breathwork_logo_transparent.svg">
+                    </div>
+                    <h4 class="leading-10 tracking-tighter not-italic 2xl:font-bold sm:font-normal xs:xl lg:2xl 2xl:text-4xl text-gray-200
+                    ">Stress loswerden</h4>
+                    <p class="not-italic font-medium 2xl:text-lg leading-7 text-center text-gray-600 tracking-tighter">Nimm dir Zeit für dich und sei vollkommen im Hier und Jetzt. Finde Freude
+                        und Entspannung durch die Atmung und lass den Stress los.</p>
+                </div>
+
+                <!-- Services Card 3 -->
+                <div class="space-y-6 p-4 text-center group hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
+                            src="./assets/images/breathwork_logo_transparent.svg">
+                    </div>
+                    <h4 class="leading-10 tracking-tighter not-italic 2xl:font-bold sm:font-normal xs:xl lg:2xl 2xl:text-4xl text-gray-200
+                    ">Probleme lösen</h4>
+                    <p class="not-italic font-medium 2xl:text-lg leading-7 text-center text-gray-600 tracking-tighter">Was sind die Hindernisse und Probleme denen du momentan gegenüberstehst?
+                        Nimm
+                        die Situation an wie sie ist um den Weg zur Lösung zu finden.</p>
+                </div>
+
+                <!-- Services Card 4 -->
+
+                <div class="space-y-6 p-4 text-center group hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
+                            src="./assets/images/breathwork_logo_transparent.svg">
+                    </div>
+                    <h4 class="leading-10 tracking-tighter not-italic 2xl:font-bold sm:font-normal xs:xl lg:2xl 2xl:text-4xl text-gray-200
+                    ">Mehr Fokus</h4>
+                    <p class="not-italic font-medium 2xl:text-lg leading-7 text-center text-gray-600 tracking-tighter">Was ist wirklich wichtig in deinem Leben? Lass alles los, was dir nicht
+                        dienlich ist und
+                        erkenne deinen nächsten Schritt.</p>
+                </div>
+                <!-- Services Card 5 -->
+                <div class="space-y-6 p-4 text-center group hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
+                            src="./assets/images/breathwork_logo_transparent.svg">
+                    </div>
+                    <h4 class="leading-10 tracking-tighter not-italic 2xl:font-bold sm:font-normal xs:xl lg:2xl 2xl:text-4xl text-gray-200
+                    ">Mehr Sinn & Zweck</h4>
+                    <p class="not-italic font-medium 2xl:text-lg leading-7 text-center text-gray-600 tracking-tighter">Was ist der wahre Sinn und Zweck deines Lebens? Finde heraus, was du
+                        wirklich willst und wie du dein Leben wirklich leben möchtest.</p>
+                </div>
+
+                <!-- Services Card 6 -->
+                <div class="space-y-6 p-4 text-center group hover:-translate-y-2 transition-all duration-300">
+                    <div>
+                        <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
+                            src="./assets/images/breathwork_logo_transparent.svg">
+                    </div>
+                    <h4 class="leading-10 tracking-tighter not-italic 2xl:font-bold sm:font-normal xs:xl lg:2xl 2xl:text-4xl text-gray-200
+                    ">Mehr Klarheit</h4>
+                    <p class="not-italic font-medium 2xl:text-lg leading-7 text-center text-gray-600 tracking-tighter">Finde deine tiefste Wahrheit und lass die Antworten die du suchst zu dir
+                        kommen. Entfache dein wahres Potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service End -->
+
+    <!-- Sichere dir jetzt ein unverbindliches, kostenloses Gespräch mit Frank Roser -->
+    <section>
+        <div class="container mx-auto mt-10">
+            <img class="mx-auto w-20 h-20" src="./assets/images/breathwork_logo_baer_weiß 11.svg">
+            <h2 class="not-italic font-bold text-xl leading-7 text-gray-600 text-center pt-6">
+                Lerne durch die Kraft deiner Atmung, die beste Version
+                deiner Selbst zu werden! </h2>
+            <p
+                class="pt-5 not-italic font-bold 2xl:text-5xl lg:text-3xl xs:text-lg tracking-tighter 2xl:leading-10 text-center text-gray-200 ">
+                Sichere dir jetzt ein unverbindliches, kostenloses Gespräch mit Frank Roser </p>
+        </div>
+
+        <div class="container">
+
+            <!-- Work Process Icons -->
+            <div class="lg:grid grid-cols-2 gap-5 mt-12 hidden">
+                <div class="relative">
+                    <div
+                        class="w-10 h-10 text-[36px] text-center items-center flex absolute text-white bg-red-500 rounded-full z-10 top-[80px] left-[63%]">
+                        <img src="./assets/images/arrow.svg" />
+                    </div>
+                </div>
+                <div class="relative">
+                    <div
+                        class="w-10 h-10 text-[36px] text-center items-center flex absolute text-white bg-red-500 rounded-full z-10 top-[80px] left-[30%]">
+                        <img src="./assets/images/arrow.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-5 mt-12">
+                <!-- Work Process Part 1 -->
+                <div class="relative ">
+                    <div class="text-center space-y-2">
+                        <p class="mx-auto bg-yellow-400 rounded-full w-14 p-4 text-xl h-14 not-italic font-bold text-center text-black">01</p>
+                        <h4 class="pt-3 text-lg text-white font-medium">Formular ausfüllen</h4>
+                        <p class="text-gray-400">Bewirb dich jetzt unverbindlich über das einfache Formular.</p>
+                    </div>
+                </div>
+
+                <!-- Work Process Part 2 -->
+                <div class="relative">
+                    <div class="text-center space-y-2">
+                        <p class="mx-auto bg-yellow-400 rounded-full w-10 p-2 h-10">02</p>
+                        <h4 class="pt-3 text-lg text-white font-medium">Termin auswählen</h4>
+                        <p class="text-gray-400">Danach kannst du direkt einen Termin für das kostenlose Gespräch
+                            auswählen.</p>
+                    </div>
+                </div>
+
+                <!-- Work Process Part 3 -->
+                <div class="relative">
+                    <div class="text-center space-y-2">
+                        <p class="mx-auto bg-yellow-400 rounded-full w-10 p-2 h-10">03</p>
+                        <h4 class="pt-3 text-lg text-white font-medium">Breathwork kennenlernen</h4>
+                        <p class="text-gray-400">Wir lernen uns kennen und sehen, wie dir Breathwork im Leben helfen
+                            kann</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- productivity Start -->
+    <section>
+        <div class="">
+            <div class="container mx-auto mt-10">
+                <img class="mx-auto w-20 h-20" src="./assets/images/breathwork_logo_baer_weiß 11.svg">
+                <h2
+                    class="pt-5 not-italic font-bold text-5xl text-center text-gray-200 font-['Inter'] tracking-tighter">
+                    Lerne durch die Kraft deiner Atmung, die beste Version
+                    deiner Selbst zu werden! </h2>
+
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-1">
+                <div class="lg:col-span-8">
+                    <img src="assets/images/productivity.png" alt="online-world" class="w-[500px]">
+                </div>
+                <div class="lg:col-span-4 bg-gray-900 w-[480px] h-[540px] rounded-lg">
+                    <a href="#" class="btn bg-yellow-400 text-black rounded-full">
+                        Kennst du das?
+                    </a>
+                    <h2 class="text-white bg-gray-900">Kennst du deine Vision
+                        für dein Leben?</h2>
+                    <p class="text-white bg-gray-900">Lebst du dein Leben so, wie du es wirklich möchtest? Bist du
+                        wirklich
+                        vollkommen ehrlich zu dir selbst und den anderen? Kennst du den Sinn deines Lebens oder ist es
+                        dir noch nicht bewusst, was du wirklich möchtest oder warum die hier bist?</p>
+                    <a href="#" class="btn bg-yellow-400 text-black rounded-lg ">
+                        Jetzt kostenloses Gespräch
+                        vereinbaren </a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-1">
+
+            <div class="lg:col-span-4 bg-gray-900 w-[480px] h-[540px] rounded-lg">
+                <a href="#" class="btn bg-yellow-400 text-black rounded-full">
+                    Kennst du das?
+                </a>
+                <h2 class="text-white bg-gray-900">Kennst du deine Vision
+                    für dein Leben?</h2>
+                <p class="text-white bg-gray-900">Lebst du dein Leben so, wie du es wirklich möchtest? Bist du wirklich
+                    vollkommen ehrlich zu dir selbst und den anderen? Kennst du den Sinn deines Lebens oder ist es
+                    dir noch nicht bewusst, was du wirklich möchtest oder warum die hier bist?</p>
+                <a href="#" class="btn bg-yellow-400 text-black rounded-lg ">
+                    Jetzt kostenloses Gespräch
+                    vereinbaren </a>
+
+            </div>
+            <div class="lg:col-span-8">
+                <img src="assets/images/productivity.png" alt="online-world" class="w-[500px]">
+            </div>
+        </div>
+    </section>
+    <!-- productivity End -->
+
+    <!-- culture start -->
+    <div class="container mx-auto mt-10">
+        <img class="mx-auto w-20 h-20" src="./assets/images/breathwork_logo_baer_weiß 11.svg">
         <h2 class="pt-5 not-italic font-bold text-5xl text-center text-gray-200 font-['Inter'] tracking-tighter">
             Befreie durch Atmung deinen Geist & dich selbst
         </h2>
@@ -86,71 +357,39 @@
             Die Kraft von “BREATHWORK” - Wie es dir helfen kann
         </p>
     </div>
+    <!-- culture end -->
+    <footer class="bg-gray-800 py-5">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-6">
+                <div class="col-span-2">
+                    <div class="text-sm text-gray-400">
+                        <script>document.write(new Date().getFullYear()) </script>&copy; Dorsin - <a
+                            href="#">Themesbrand</a>
+                    </div>
+                </div>
 
-    <!-- cards -->
-    <div class="container px-10 pt-10 grid grid-cols-1 md:grid-cols-3 gap-0">
-        <div class="p-10 mx-auto mt-10">
-            <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
-                src="./assests/breathwork_logo_transparent.svg">
-            <h2 class="pt-5 not-italic font-bold text-2xl text-center text-gray-200 font-['Inter'] tracking-tighter">
-                Ängste überwinden </h2>
-            <p
-                class="pt-4 not-italic font-bold text-3xl leading-8 text-center text-gray-600 font-['Inter'] tracking-tighter">
-                Lass dich von deinem Atem leiten und finde den Mut in dir dich deinen Ängsten zu
-                stellen. In dir steckt so viel mehr als du denkst. </p>
+                <div class="ml-auto">
+                    <img src="assets/images/payment.png" alt="payment-img" class="h-9">
+                </div>
+            </div>
         </div>
-        <div class="p-10 mx-auto mt-10">
-            <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
-                src="./assests/breathwork_logo_transparent.svg">
-            <h2 class="pt-5 not-italic font-bold text-2xl text-center text-gray-200 font-['Inter'] tracking-tighter">
-                Stress loswerden</h2>
-            <p
-                class="pt-4 not-italic font-bold text-sm leading-8 text-center text-gray-600 font-['Inter'] tracking-tighter">
-                Nimm dir Zeit für dich und sei vollkommen im Hier und Jetzt. Finde Freude und Entspannung durch die
-                Atmung und lass den Stress los. </p>
-        </div>
-        <div class="p-10 mx-auto mt-10">
-            <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
-                src="./assests/breathwork_logo_transparent.svg">
-            <h2 class="pt-5 not-italic font-bold text-2xl text-center text-gray-200 font-['Inter'] tracking-tighter">
-                Probleme lösen </h2>
-            <p
-                class="pt-4 not-italic font-bold text-sm leading-8 text-center text-gray-600 font-['Inter'] tracking-tighter">
-                Was sind die Hindernisse und Probleme denen du momentan gegenüberstehst? Nimm
-                die Situation an wie sie ist um den Weg zur Lösung zu finden. </p>
-        </div>
-        <div class="p-10 mx-auto mt-10">
-            <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
-                src="./assests/breathwork_logo_transparent.svg">
-            <h2 class="pt-5 not-italic font-bold text-2xl text-center text-gray-200 font-['Inter'] tracking-tighter">
-                Mehr Fokus </h2>
-            <p
-                class="pt-4 not-italic font-bold text-sm leading-8 text-center text-gray-600 font-['Inter'] tracking-tighter">
-                Was ist wirklich wichtig in deinem Leben? Lass alles los, was dir nicht dienlich ist und
-                erkenne deinen nächsten Schritt. </p>
-        </div>
-        <div class="p-10 mx-auto mt-10">
-            <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
-                src="./assests/breathwork_logo_transparent.svg">
-            <h2 class="pt-5 not-italic font-bold text-2xl text-center text-gray-200 font-['Inter'] tracking-tighter">
-                Mehr Sinn & Zweck </h2>
-            <p
-                class="pt-4 not-italic font-bold text-sm leading-8 text-center text-gray-600 font-['Inter'] tracking-tighter">
-                Was ist der wahre Sinn und Zweck deines Lebens? Finde heraus, was du wirklich willst und wie du dein
-                Leben wirklich leben möchtest. </p>
-        </div>
-        <div class="p-10 mx-auto mt-10">
-            <img class="mx-auto w-20 h-20 bg-yellow-400 rounded-full p-2"
-                src="./assests/breathwork_logo_transparent.svg">
-            <h2 class="pt-5 not-italic font-bold text-2xl text-center text-gray-200 font-['Inter'] tracking-tighter">
-                Mehr Klarheit </h2>
-            <p
-                class="pt-4 not-italic font-bold text-sm leading-8 text-center text-gray-600 font-['Inter'] tracking-tighter">
-                Finde deine tiefste Wahrheit und lass die Antworten die du suchst zu dir kommen. Entfache dein wahres
-                Potential. </p>
-        </div>
-    </div>
-</div>
+    </footer>
+    <!-- Footer Start -->
+
+    <!-- Smooth-Scroll Javascript -->
+    <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="assets/js/gumshoe.polyfills.min.js"></script>
+
+    <!-- Modal Javascript -->
+    <script src="assets/js/modal.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="assets/js/app.js"></script>
+
 </body>
+
+
+<!-- Mirrored from themesbrand.com/dorsin-tailwind/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 Mar 2022 18:16:27 GMT -->
 
 </html>
