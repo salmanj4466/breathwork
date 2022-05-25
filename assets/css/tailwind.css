@@ -3,7 +3,6 @@
    Version: 1.0.0
    File Description: Main Css file of the template
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;family=Rubik:wght@300;400;500&amp;display=swap");
 /* ! tailwindcss v3.0.17 | MIT License | https://tailwindcss.com
 */
 /*
@@ -1380,9 +1379,7 @@ select{
 .align-middle{
   vertical-align: middle !important;
 }
-.font-poppins{
-  font-family: Poppins, sans-serif !important;
-}
+
 .text-xl{
   font-size: 1.25rem !important;
   line-height: 1.75rem !important;
@@ -1669,13 +1666,12 @@ body{
   position: relative;
   overflow-x: hidden;
   font-weight: 400;
-  font-family: Rubik, sans-serif;
 }
 
 section{
   position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 a{
@@ -1702,7 +1698,6 @@ hr{
 h1, h2, h3, h4, h5, h6{
   font-weight: 500;
   line-height: 1.2;
-  font-family: Poppins, sans-serif;
 }
 
 .h1, h1{
@@ -2041,8 +2036,8 @@ a {
 
 @media (min-width: 992px){
   .navbar-custom.is-sticky{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
   }
 }
 
