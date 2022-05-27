@@ -39,8 +39,8 @@ body {
 }
 
 .main-text {
-  font-weight: 700;
-  font-size: 28px;
+  font-weight: 600;
+  font-size: 24px;
   line-height: 34px;
   letter-spacing: -0.03em;
   color: #808080;
@@ -65,15 +65,74 @@ body {
 
 
 .service-section .grid p {
-  font-weight: 500;
-  font-size: 19px;
+  font-weight: 00;
+  font-size: 16px;
   line-height: 30px;
   letter-spacing: -0.01em;
 }
 
+.service-section .grid-cols-1 {
+  border-left: 1px solid #ffffff52;
+  border-right: 1px solid #ffffff52;
+
+}
+
+.service-section .grid-cols-1:before {
+  content: "";
+  border-top: 1px solid #ffffff52;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+
+.service-section .grid-cols-1:after {
+  content: "";
+  border-top: 1px solid #ffffff52;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+.service-section .line {
+  border-top: 1px solid #ffffff52;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+}
+
+.service-section .line-1 {
+  border-right: 1px solid #ffffff52;
+  position: absolute;
+  left: 32.3%;
+  top: 0;
+  height: 100%;
+}
+
+
+.service-section .line-2 {
+  border-right: 1px solid #ffffff52;
+  position: absolute;
+  left: 67.4%;
+  top: 0;
+  height: 100%;
+}
+
+.team-section {
+  padding-top: 20px;
+}
 
 .customer-section {
-  padding-top: 140px;
+  padding-top: 60px;
+}
+
+.vision-section {
+  padding-top: 20px;
 }
 
 .customer-section .masonry {
@@ -118,8 +177,8 @@ body {
 
 .footer-start h1 {
   font-weight: 700;
-  font-size: 75px;
-  line-height: 77px;
+  font-size: 60px;
+  line-height: 70px;
 }
 
 .owl-dots {
@@ -153,6 +212,10 @@ body {
   line-height: 30px;
   letter-spacing: 0.02em;
 
+}
+
+.happy-customer {
+  padding-bottom: 60px;
 }
 
 .vision-section .card {
@@ -282,10 +345,18 @@ body {
   left: 43%;
 }
 
+.navbar-custom img {
+  width: 140px;
+}
+
+.btn {
+  text-align: center;
+}
+
 /* Media query */
 
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .lg\:container {
     max-width: 1650px;
     padding-right: 15px;
@@ -324,6 +395,62 @@ body {
   }
 }
 
+@media only screen and (max-width: 1600px) {
+  .main-heading {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .service-section h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .vision-section .card h4 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+
+  .vision-section .card p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .feature-section h2 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  #home .flex p {
+    font-size: 20px;
+  }
+
+  .sub-heading {
+   font-style: normal;
+   font-weight: 500;
+   font-size: 35px;
+   line-height: 48px;
+ }
+
+ .footer-start h1 {
+  font-weight: 600;
+  line-height: 60px;
+  font-size: 50px;
+}
+
+.customer-section .card p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.customer-section .card {
+  padding: 30px;
+}
+}
+
 
 @media only screen and (max-width: 991px) {
   .footer-start h1 {
@@ -338,7 +465,7 @@ body {
 
   .faq-section ul {
     width: 100%;
-        padding: 0;
+    padding: 0;
   }
 
   .sub-heading {
@@ -352,15 +479,15 @@ body {
   }
 
   .spirit-section .card {
-        padding: 30px;
-        flex-wrap: wrap;
-        text-align: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    text-align: center;
   }
 
   .spirit-section .card .w-40,
-   .spirit-section .card .w-60 {
+  .spirit-section .card .w-60 {
     width: 100% !important;
-}
+  }
 
 
   .spirit-section .card h3 {
@@ -377,13 +504,13 @@ body {
     line-height: 40px !important;
   }
 
-    .main-heading {
+  .main-heading {
     font-weight: 800;
     font-size: 36px;
     line-height: 45px;
   }
 
-    .sub-heading {
+  .sub-heading {
     font-size: 28px;
     line-height: 40px;
     margin-top: 10px;
@@ -414,39 +541,62 @@ body {
     column-count: 1;
   }
 
- .faq-section ul li a.toggle {
+  .faq-section ul li a.toggle {
     color: #fefefe;
     padding: 20px 25px;
     font-size: 16px;
     border-radius: 16px;
-    }
+  }
 
-       .main-heading {
+  .main-heading {
     font-weight: 600;
     font-size: 30px;
     line-height: 36px;
   }
 
-     .sub-heading {
-     font-size: 28px;
-    line-height: 36px;
-    font-weight: 600;
-  }
+  .sub-heading {
+   font-size: 28px;
+   line-height: 36px;
+   font-weight: 600;
+ }
 
 
-  .main-text {
-    font-size: 18px;
-    line-height: 26px;
-  }
+ .main-text {
+  font-size: 18px;
+  line-height: 26px;
+}
 
-   .feature-section h2 {
-    font-size: 30px;
-    line-height: 45px;
-  }
+.feature-section h2 {
+  font-size: 30px;
+  line-height: 45px;
+}
 
-  #home .flex p {
-    font-weight: 400;
-    font-size: 
-  }
+#home .flex p {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 26px;
+}
+
+.navbar-custom img {
+  width: 100px;
+}
+
+section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feature-section .text-right {
+  text-align: left !important;
+}
+
+footer {
+  text-align: center !important;
+}
+
+footer .ml-auto {
+  margin: 0 auto !important;
+}
 
 }
