@@ -55,6 +55,9 @@ body {
   font-size: 50px;
 }
 
+#home {
+  padding: 120px 0 100px;
+}
 
 .service-section h4 {
   font-weight: 700;
