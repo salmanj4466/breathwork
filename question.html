@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>BREATHWORK</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="" />
+      <meta name="keywords" content="Tailwindcss v3.0" />
+      <meta content="" name="author" />
+      <!-- App favicon -->
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Tailwind Css-->
+      <link href="assets/css/tailwind.css" rel="stylesheet" type="text/css" />
+      <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <!-- Icons Css -->
+      <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <!-- Navbar Start -->
+      <div class="navbar-custom sub-menu" id="navbar">
+         <nav>
+            <div class="lg:container flex flex-wrap items-end justify-between">
+               <!-- Main Logo -->
+               <a href="index.html" class="flex">
+               <img src="assets/images/logo.png" alt="logo"> 
+               </a>
+               <div class="flex items-center mt-5">
+                  <a href="Javascript:void(0)" class="text-md lg:text-xl py-3 translate-y-0 pr-4">
+                  <span class="w-8 h-8 p-1 mr-2 rounded-full text-sm inline-block text-center">1</span> Formular ausfüllen
+                  </a>
+                  <a href="Javascript:void(0)" class="text-md lg:text-xl py-3 translate-y-0">
+                  <span class="w-8 h-8 p-1 mr-2 rounded-full text-sm inline-block text-center">2</span>Termin auswählen
+                  </a>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!-- Appointment -->
+      <section class="appointment-section">
+         <div class="container text-black">
+            <div class="text-center relative">
+               <hr>
+               <h2 class="text-white text-4xl font-bold mt-14">
+                  Fülle jetzt ein paar einfache Fragen für das Gespräch aus.
+               </h2>
+               <p class="text-gray main-text text-xl pt-2">
+                  Suche dir danach einen Termin zum kostenlosen Gespräch aus!
+               </p>
+            </div>
+         </div>
+         <div class="container">
+            <div class="card border-0 type-form mt-12">
+               <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+                  <div class="md:flex md:flex-row lg:justify-start lg:flex-col lg:text-left md:justify-between">
+                     <img src="assets/images/bildschirmfoto.png" alt="">
+                  </div>
+                  <div class="lg:col-span-2">
+                     <form>
+                        <h3><span>1<i class="mdi mdi-arrow-right"></i></span> Hi! Schon, dass du hier bist! <br />  Wie lautet dein Vor- und Nachname?</h3>
+                        <input type="text" class="form-control" placeholder="Antwort hier...">
+                        <button type="submit" class="btn bg-yellow-500 text-black font-bold rounded-sm text-lg lg:text-xl py-2 translate-y-0">Ok <i class="mdi mdi-check font-bold"></i></button> <span class="ml-3"> Drucken Sie Enter ↵ </span>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Smooth-Scroll Javascript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+      <script src="assets/js/gumshoe.polyfills.min.js"></script>
+      <!-- Custom Javascript -->
+      <script src="assets/js/app.js"></script>
+   </body>
+</html>

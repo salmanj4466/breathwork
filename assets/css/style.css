@@ -1,5 +1,5 @@
 body {
-  background: #000;
+  background: #111;
   color: #F0EEEB;
   font-family: 'Inter', sans-serif;
 }
@@ -98,7 +98,6 @@ body {
   bottom: 0;
   width: 100%;
 }
-
 
 
 .service-section .line {
@@ -283,7 +282,7 @@ body {
   width: 100%;
   display: block;
   background:
-  #181818;
+    #181818;
   color: #fefefe;
   padding: 25px 30px;
   font-size: 20px;
@@ -349,11 +348,96 @@ body {
 }
 
 .navbar-custom img {
-  width: 140px;
+  width: 120px;
 }
 
 .btn {
   text-align: center;
+}
+
+.appointment-section {
+  padding: 125px 0 50px;
+}
+
+.appointment-section .card {
+  height: 100%;
+}
+
+.appointment-section .card ul li {
+  padding: 4px 0;
+  font-size: 14px;
+}
+
+.appointment-section .card ul li:first-child {
+  color: #58bf9e;
+}
+
+.appointment-section .card ul li i {
+  margin-right: 5px;
+}
+
+.appointment-section .logo {
+  max-width: 150px;
+  margin-bottom: 30px;
+}
+
+
+.app-details {
+  padding: 40px;
+
+}
+
+.sub-menu a span {
+
+  border: 1px solid #FFFFFF;
+}
+
+
+.type-form {
+  background: #000;
+  color: #fff;
+  padding: 40px 80px 40px 100px;
+}
+
+
+.type-form img {
+  padding-right: 50px;
+}
+
+
+.type-form form {
+  padding-left: 160px;
+}
+
+.type-form .form-control {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  border-bottom: 1px solid #7b7878;
+  margin-bottom: 20px;
+  padding-left: 0;
+  font-size: 24px;
+}
+
+.type-form .form-control:focus {
+  outline: none;
+  border-bottom: 1px solid #FFD952;
+  box-shadow: none;
+
+}
+
+.type-form h3 {
+  margin-bottom: 30px !important;
+  position: relative;
+  font-weight: 400;
+}
+
+
+.type-form h3 span {
+  position: absolute;
+  left: -35px;
+  font-size: 16px;
+  top: 5px;
 }
 
 /* Media query */
@@ -432,26 +516,26 @@ body {
   }
 
   .sub-heading {
-   font-style: normal;
-   font-weight: 500;
-   font-size: 35px;
-   line-height: 48px;
- }
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 48px;
+  }
 
- .footer-start h1 {
-  font-weight: 600;
-  line-height: 60px;
-  font-size: 50px;
-}
+  .footer-start h1 {
+    font-weight: 600;
+    line-height: 60px;
+    font-size: 50px;
+  }
 
-.customer-section .card p {
-  font-size: 16px;
-  line-height: 25px;
-}
+  .customer-section .card p {
+    font-size: 16px;
+    line-height: 25px;
+  }
 
-.customer-section .card {
-  padding: 30px;
-}
+  .customer-section .card {
+    padding: 30px;
+  }
 }
 
 
@@ -498,6 +582,14 @@ body {
     margin-bottom: 20px;
   }
 
+  .type-form img {
+    display: none;
+  }
+
+  .type-form form {
+    padding-left: 0px;
+  }
+
 }
 
 
@@ -533,8 +625,11 @@ body {
     line-height: 45px;
   }
 
-}
+  .type-form {
+    padding: 20px 30px 40px 60px;
+  }
 
+}
 
 
 @media only screen and (max-width: 576px) {
@@ -558,48 +653,87 @@ body {
   }
 
   .sub-heading {
-   font-size: 28px;
-   line-height: 36px;
-   font-weight: 600;
- }
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+  }
 
 
- .main-text {
-  font-size: 18px;
-  line-height: 26px;
-}
+  .main-text {
+    font-size: 18px;
+    line-height: 26px;
+  }
 
-.feature-section h2 {
-  font-size: 30px;
-  line-height: 45px;
-}
+  .feature-section h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
 
-#home .flex p {
-  font-weight: 400 !important;
-  font-size: 16px !important;
-  line-height: 26px;
-}
+  #home .flex p {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 26px;
+  }
 
-.navbar-custom img {
-  width: 100px;
-}
+  .navbar-custom img {
+    width: 100px;
+  }
 
-section {
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+  section {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-.feature-section .text-right {
-  text-align: left !important;
-}
+  .feature-section .text-right {
+    text-align: left !important;
+  }
 
-footer {
-  text-align: center !important;
-}
+  footer {
+    text-align: center !important;
+  }
 
-footer .ml-auto {
-  margin: 0 auto !important;
-}
+  footer .ml-auto {
+    margin: 0 auto !important;
+  }
+
+  .appointment-section h2 {
+    font-size: 28px !important;
+    padding-top: 0 !important;
+  }
+
+  .app-details {
+    padding: 20px;
+  }
+
+  .app-details h4 span {
+    display: flex;
+    margin-left: 0 !important;
+    margin-top: 15px;
+  }
+
+  .sub-menu a {
+    font-size: 13px;
+  }
+
+  .sub-menu a span {
+    margin-right: 5px !important;
+  }
+
+  .sub-menu .flex-wrap {
+    justify-content: center !important;
+  }
+
+  .type-form {
+    padding: 20px 20px 40px 50px;
+  }
+
+  .type-form h3 {
+    font-size: 20px;
+  }
+
+  .navbar-custom {
+    background: #111;
+  }
 
 }
